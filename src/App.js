@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import {
     AppBar,
     Button,
@@ -35,23 +35,18 @@ function App() {
 
     return (
         <div>
-            <AppBar position="fixed" className='bar'>
-                <Container fixed>
-                    <Toolbar>
-                        {/*<IconButton edge="start"*/}
-                        {/*            color="inherit" aria-label="menu" className={classes.menuButton}>*/}
-                        {/*    <MenuIcon/>*/}
-                        {/*</IconButton>*/}
+            <AppBar position="fixed" >
+                <Container fixed >
+                    <Toolbar >
                         <Typography variant="h6" className={classes.titleBar}>Blog</Typography>
                         <Box mr={3}>
-                            <Button component={ NavLink } to={PATH.ALL_ARTICLES} variant="contained" >
+                            <Button component={NavLink} to={PATH.ALL_ARTICLES} variant="contained">
                                 All articles
                             </Button>
                         </Box>
                     </Toolbar>
                 </Container>
             </AppBar>
-
             <Routes/>
         </div>
     );

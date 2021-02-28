@@ -12,7 +12,7 @@ export const ArticleContainer = () => {
 
     return (
         <div>
-            <Typography variant="h3" className={classes.title}>All articles</Typography>
+            <Typography variant="h3" className={classes.titleMainPage}>All articles</Typography>
             {Object.values(posts).map(post => {
                 return <Article
                     authorName={users[post.userId].name}

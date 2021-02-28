@@ -1,37 +1,46 @@
 import React from "react";
-import {CardContent,Card, Typography, Container} from "@material-ui/core";
+import {CardContent, Card, Typography, Container, Link} from "@material-ui/core";
 import {useStyles} from "../common/useStyles";
+import {NavLink} from "react-router-dom";
 
 
 export const ArticlePage = (props) => {
 
     const classes = useStyles()
+    const {title, body} = props.article
+    const {name, id} = props.author
+
     return (
-        <Card className={classes.cardArticle}>
-            <CardContent >
+        <Card className={classes.cardWrap}>
+            <CardContent>
                 <Container fixed>
                     <div className={classes.mainFeaturesPostContent}>
                         <Typography
-                            component="h1"
                             variant="h4"
                             gutterBottom
                             className={classes.titleArticle}
                         >
-                            {props.article.title}
+                            {title}
                         </Typography>
 
                         <Typography
                             variant="body1"
                             paragraph
                         >
-                            {props.article.body}
+                            {body}
                         </Typography>
                         <Typography
-                            component="h1"
-                            variant="h6"
+                            variant="subtitle1"
                             gutterBottom
                         >
-                            {props.author.name}
+                            {name}
+                            <Link component={NavLink} to={'/author_page/' + id}>
+                                <Typography
+                                    variant="subtitle1"
+                                    gutterBottom
+                                > about the author
+                                </Typography>
+                            </Link>
                         </Typography>
                     </div>
                 </Container>
