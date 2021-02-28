@@ -1,7 +1,25 @@
 .splashWrap{
-    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .logo {
+    animation: pulse 2s ease-in-out infinite;
+    height: 200px;
+    width: 200px;
+}
 
+@keyframes pulse {
+    from {
+        transform: scale(.85);
+    }
+    50% {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.85);
+    }
 }
