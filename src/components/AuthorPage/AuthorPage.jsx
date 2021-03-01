@@ -1,7 +1,6 @@
 import React from 'react'
 import {Card, CardContent, Divider, Typography} from "@material-ui/core";
 import {useStyles} from "../common/useStyles";
-import {AuthorsArticles} from "../AuthorsArticles/AuthorsArticles";
 
 
 export const AuthorPage = (props) => {
@@ -44,7 +43,6 @@ export const AuthorPage = (props) => {
                 <Typography variant="subtitle1" gutterBottom className={classes.catchPhrase}>"{company.catchPhrase}"
                 </Typography>
 
-                <AuthorsArticles/>
             </CardContent>
         </Card>
     )
