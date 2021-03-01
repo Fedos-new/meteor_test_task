@@ -1,26 +1,25 @@
 import React from 'react'
 import {useSelector} from "react-redux";
-import {Article} from "./Article";
-import {Typography} from "@material-ui/core";
+import {AllArticles} from "./AllArticles";
+import {Typography, Card} from "@material-ui/core";
 import {useStyles} from "../common/useStyles";
 
 
-export const ArticleContainer = () => {
+export const AllArticlesContainer = () => {
     const classes = useStyles()
     const users = useSelector(state => state.postReducer.users)
     const posts = useSelector(state => state.postReducer.posts)
 
     return (
-        <div>
+        <Card className={classes.cardWrap}>
             <Typography variant="h3" className={classes.titleMainPage}>All articles</Typography>
             {Object.values(posts).map(post => {
-                return <Article
+                return <AllArticles
                     authorName={users[post.userId].name}
                     key={post.id}
                     article={post}
-
                 />
             })}
-        </div>
+        </Card>
     )
 }

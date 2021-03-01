@@ -18,7 +18,7 @@ export const ArticlePage = (props) => {
                         <Typography
                             variant="h4"
                             gutterBottom
-                            className={classes.titleArticle}
+                            className={classes.titleSecond}
                         >
                             {title}
                         </Typography>

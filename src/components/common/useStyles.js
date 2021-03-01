@@ -1,7 +1,7 @@
 import {makeStyles} from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
-    root: {
+    rootList: {
         flexGrow: 1,
     },
     titleBar: {
@@ -15,10 +15,20 @@ export const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(12),
         marginBottom: theme.spacing(4)
     },
-    titleArticle: {
+    titleSecond: {
         flexGrow: 1,
         textAlign: "center",
-        fontSize: "28px",
+        fontSize: "24px",
+    },
+    titleArticle: {
+        flexGrow: 1,
+        // textAlign: "center",
+        fontSize: "24px",
+    },
+    titleArticleAuthor: {
+        flexGrow: 1,
+        textAlign: "start",
+        fontSize: "20px",
     },
     titleAuthorName: {
         flexGrow: 1,
@@ -40,7 +50,16 @@ export const useStyles = makeStyles((theme) => ({
         width: "64%",
         minWidth: "320px",
         flexGrow: 1,
-        margin: "0 auto"
+        margin: "0 auto",
+        marginBottom: '30px',
+        marginTop: '120px'
+    },
+    authorPageArticle: {
+        width: "64%",
+        minWidth: "320px",
+        margin: "12px auto",
+        padding: '30px 0',
+
     },
     cardAuthorContent: {
         flexGrow: 1,
@@ -48,5 +67,13 @@ export const useStyles = makeStyles((theme) => ({
     },
     catchPhrase: {
         fontStyle: "italic"
-    }
+    },
+    barButtons: {
+        display: 'flex',
+        flexWrap: 'wrap',
+    },
+    button: {
+        margin: '8px 8px 8px 12px'
+    },
+
 }))

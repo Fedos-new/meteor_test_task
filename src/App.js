@@ -35,15 +35,29 @@ function App() {
 
     return (
         <div>
-            <AppBar position="fixed" >
-                <Container fixed >
-                    <Toolbar >
+            <AppBar position="fixed">
+                <Container fixed>
+                    <Toolbar>
                         <Typography variant="h6" className={classes.titleBar}>Blog</Typography>
-                        <Box mr={3}>
-                            <Button component={NavLink} to={PATH.ALL_ARTICLES} variant="contained">
-                                All articles
-                            </Button>
-                        </Box>
+
+                        <div className={classes.barButtons}>
+                            <Box mr={3}>
+                                <Button component={NavLink} to={PATH.ALL_ARTICLES}
+                                        className={classes.button}
+                                        variant="contained"
+                                >
+                                    All articles
+                                </Button>
+                            </Box>
+                            <Box mr={3}>
+                                <Button component={NavLink} to={PATH.ALL_AUTHORS}
+                                        className={classes.button}
+                                        variant="contained">
+                                    All authors
+                                </Button>
+                            </Box>
+                        </div>
+
                     </Toolbar>
                 </Container>
             </AppBar>
