@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/meteor_test_task/static/css/main.ae1e811d.chunk.css",
+    "main.js": "/meteor_test_task/static/js/main.acb4a5e9.chunk.js",
+    "main.js.map": "/meteor_test_task/static/js/main.acb4a5e9.chunk.js.map",
+    "runtime-main.js": "/meteor_test_task/static/js/runtime-main.9eab797c.js",
+    "runtime-main.js.map": "/meteor_test_task/static/js/runtime-main.9eab797c.js.map",
+    "static/js/2.9f789e60.chunk.js": "/meteor_test_task/static/js/2.9f789e60.chunk.js",
+    "static/js/2.9f789e60.chunk.js.map": "/meteor_test_task/static/js/2.9f789e60.chunk.js.map",
+    "static/js/3.7218afa8.chunk.js": "/meteor_test_task/static/js/3.7218afa8.chunk.js",
+    "static/js/3.7218afa8.chunk.js.map": "/meteor_test_task/static/js/3.7218afa8.chunk.js.map",
+    "index.html": "/meteor_test_task/index.html",
+    "static/css/main.ae1e811d.chunk.css.map": "/meteor_test_task/static/css/main.ae1e811d.chunk.css.map",
+    "static/js/2.9f789e60.chunk.js.LICENSE.txt": "/meteor_test_task/static/js/2.9f789e60.chunk.js.LICENSE.txt",
+    "static/media/logo.920f1262.svg": "/meteor_test_task/static/media/logo.920f1262.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9eab797c.js",
+    "static/js/2.9f789e60.chunk.js",
+    "static/css/main.ae1e811d.chunk.css",
+    "static/js/main.acb4a5e9.chunk.js"
+  ]
+}
