@@ -1,3 +1,9 @@
+![blog](https://user-images.githubusercontent.com/61763783/110752460-e46d0080-8277-11eb-8ad9-c50a0f3d6c47.gif)
+
+https://fedos-new.github.io/meteor_test_task/
+
+
+
 ## Тестовое задание 
 
 Реализовать React-приложение для отображения списка постов блога. 
